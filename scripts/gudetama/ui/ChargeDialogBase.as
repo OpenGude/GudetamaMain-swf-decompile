@@ -399,7 +399,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(117441497,metalShopItemDef.product_id),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(DEBUG_PURCHASE,metalShopItemDef.product_id),function(param1:Array):void
          {
             Engine.hideLoading(scene);
             procDebugPurchaseResponse(param1);

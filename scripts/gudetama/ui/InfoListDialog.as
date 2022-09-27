@@ -87,7 +87,7 @@ package gudetama.ui
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(66),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_GET_AVAILABLE_SYSTEM_MAILS),function(param1:Array):void
             {
                setupMails(param1);
                taskDone();
@@ -364,7 +364,7 @@ package gudetama.ui
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(160,mail.uniqueKey),function(param1:MailPresentResult):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_READ_INFORMATION,mail.uniqueKey),function(param1:MailPresentResult):void
             {
                var response:MailPresentResult = param1;
                Engine.hideLoading(InfoListDialog);
@@ -441,7 +441,7 @@ package gudetama.ui
                         {
                            gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                         }
-                        gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(16777465,mail.uniqueKey),function(param1:Array):void
+                        gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(HOME_MANUALDELETION_PRESENT,mail.uniqueKey),function(param1:Array):void
                         {
                            var _loc2_:int = param1[0] as int;
                            if(_loc2_ == 1)
@@ -465,7 +465,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(72,mail.uniqueKey),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_GET_PRESENT,mail.uniqueKey),function(param1:Array):void
          {
             var response:Array = param1;
             Engine.hideLoading(InfoListDialog);
@@ -549,7 +549,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(73),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_GET_PRESENT_BULK),function(param1:Array):void
          {
             var response:Array = param1;
             Engine.hideLoading(InfoListDialog);
@@ -602,7 +602,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(66),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_GET_AVAILABLE_SYSTEM_MAILS),function(param1:Array):void
          {
             var _loc2_:int = 0;
             var _loc3_:* = null;

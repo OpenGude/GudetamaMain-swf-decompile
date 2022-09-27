@@ -84,7 +84,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(16777409,textInput.text#2),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(HOME_USE_CODE,textInput.text#2),function(param1:Array):void
          {
             var _loc2_:int = param1[0];
             if(_loc2_ < 0)

@@ -194,7 +194,7 @@ package gudetama.scene.kitchen
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(134217971,[kitchenwareType,usefulId]),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(COOKING_HURRY_UP_BY_USEFUL,[kitchenwareType,usefulId]),function(param1:Array):void
          {
             var response:Array = param1;
             Engine.hideLoading(HurryUpConfirmDialog);

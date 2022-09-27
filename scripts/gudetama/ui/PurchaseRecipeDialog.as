@@ -148,7 +148,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(134217926,id),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(COOKING_PURCHASE_RECIPE,id),function(param1:Array):void
          {
             Engine.hideLoading(PurchaseRecipeDialog);
             var _loc2_:RecipeNoteData = param1[0];

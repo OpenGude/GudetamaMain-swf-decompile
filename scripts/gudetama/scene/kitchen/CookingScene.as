@@ -1336,7 +1336,7 @@ package gudetama.scene.kitchen
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(134217910,kitchenwareType),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(COOKING_CANCEL,kitchenwareType),function(param1:Array):void
          {
             var response:Array = param1;
             Engine.hideLoading(CookingScene);
@@ -1592,7 +1592,7 @@ package gudetama.scene.kitchen
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(134217911,[kitchenwareType,max - 1,!isTutorial()]),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(COOKING_HURRY_UP,[kitchenwareType,max - 1,!isTutorial()]),function(param1:Array):void
                {
                   if(param1[0] is int)
                   {
@@ -1736,7 +1736,7 @@ package gudetama.scene.kitchen
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(134217977,kitchenwareDef.id#2),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(COOKING_GET_CUP_GACHA_LIST_RECIPE,kitchenwareDef.id#2),function(param1:Array):void
          {
             var response:Array = param1;
             if(response)
@@ -2421,7 +2421,7 @@ class GradeButtonGroupUI extends UIBase
       {
          gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
       }
-      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(249,kitchenwareType),function(param1:Object):void
+      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_CHECK_KITCHENWARE,kitchenwareType),function(param1:Object):void
       {
          var _loc7_:* = null;
          var _loc6_:int = 0;
@@ -3685,7 +3685,7 @@ class ConfirmUI extends UIBase
       {
          gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
       }
-      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(134217909,[recipeNoteId,gudetamaId,currentTarget]),function(param1:*):void
+      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(COOKING_START,[recipeNoteId,gudetamaId,currentTarget]),function(param1:*):void
       {
          var response:* = param1;
          Engine.hideLoading(CookingScene);
@@ -3740,7 +3740,7 @@ class ConfirmUI extends UIBase
       {
          gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
       }
-      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(134217925,gudetamaId),function(param1:GudetamaData):void
+      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(COOKING_UNLOCK,gudetamaId),function(param1:GudetamaData):void
       {
          var response:GudetamaData = param1;
          Engine.hideLoading(CookingScene);

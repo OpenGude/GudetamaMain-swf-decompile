@@ -819,7 +819,7 @@ package gudetama.ui
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(29,sendData),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(GENERAL_PURCHASE_CHECK,sendData),function(param1:Array):void
                {
                   var response:Array = param1;
                   if(response != null)
@@ -1227,7 +1227,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(159),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_CHECK_CLEARED_MISSION),function(param1:Array):void
          {
             Engine.hideLoading(checkClearedMission);
             if(param1.length > 0)

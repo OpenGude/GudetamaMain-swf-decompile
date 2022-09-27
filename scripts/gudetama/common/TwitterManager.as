@@ -492,7 +492,7 @@ package gudetama.common
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(225,0),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_UNLINK_SNS,0),function(param1:Array):void
          {
             var _loc2_:int = 0;
             if(param1 != null)

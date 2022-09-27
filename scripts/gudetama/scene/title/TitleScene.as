@@ -398,7 +398,7 @@ package gudetama.scene.title
                   {
                      gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                   }
-                  gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndArrayObject(10,TimeZoneUtil.epochMillisToOffsetSecs(),Engine.getLocale()),function(param1:Array):void
+                  gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndArrayObject(GENERAL_INIT_AT_LOGIN,TimeZoneUtil.epochMillisToOffsetSecs(),Engine.getLocale()),function(param1:Array):void
                   {
                      var response:Array = param1;
                      UserDataWrapper.init(response[0] as UserData);
@@ -554,7 +554,7 @@ package gudetama.scene.title
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(77),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_ENTER_OPENING),function(param1:*):void
          {
             var _loc3_:* = 0;
             var _loc2_:Array = param1;
@@ -621,7 +621,7 @@ package gudetama.scene.title
                   {
                      gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                   }
-                  gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndArrayObject(10,TimeZoneUtil.epochMillisToOffsetSecs(),Engine.getLocale()),function(param1:Array):void
+                  gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndArrayObject(GENERAL_INIT_AT_LOGIN,TimeZoneUtil.epochMillisToOffsetSecs(),Engine.getLocale()),function(param1:Array):void
                   {
                      var response:Array = param1;
                      UserDataWrapper.init(response[0] as UserData);
@@ -666,7 +666,7 @@ package gudetama.scene.title
                      {
                         gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                      }
-                     gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(117441511,rank),function(param1:UserData):void
+                     gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(DEBUG_GENERATE_USERDATA,rank),function(param1:UserData):void
                      {
                         var response:UserData = param1;
                         UserDataWrapper.init(response);

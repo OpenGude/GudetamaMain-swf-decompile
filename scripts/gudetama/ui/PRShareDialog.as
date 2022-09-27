@@ -294,7 +294,7 @@ package gudetama.ui
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(240,[identifiedPresentId,currentType]),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_IDENTIFIED_PRESENT,[identifiedPresentId,currentType]),function(param1:Array):void
             {
                var response:Array = param1;
                Engine.unlockTouchInput(PRShareDialog);
@@ -316,7 +316,7 @@ package gudetama.ui
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(236,currentType),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(PACKET_TRIED_SHARE,currentType),function(param1:Array):void
             {
                Engine.unlockTouchInput(PRShareDialog);
                backButtonCallback();

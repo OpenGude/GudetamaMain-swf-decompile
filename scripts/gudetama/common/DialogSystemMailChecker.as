@@ -820,7 +820,7 @@ package gudetama.common
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(51,rankingIds),function(param1:*):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_RANKING_INFO,rankingIds),function(param1:*):void
                {
                   var res:* = param1;
                   Engine.hideLoading(moveScene);
@@ -898,7 +898,7 @@ package gudetama.common
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(240,id),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_IDENTIFIED_PRESENT,id),function(param1:Array):void
          {
             var response:Array = param1;
             Engine.hideLoading(identifiedPresent);

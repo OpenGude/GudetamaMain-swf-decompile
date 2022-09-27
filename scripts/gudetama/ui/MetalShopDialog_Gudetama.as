@@ -117,7 +117,7 @@ package gudetama.ui
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(59),function(param1:Object):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_PING),function(param1:Object):void
             {
                queue.taskDone();
             });

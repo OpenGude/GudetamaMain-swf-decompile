@@ -102,7 +102,7 @@ package gudetama.scene.friend
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(219,gudetamaId),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_GET_WANTED_FRIENDS,gudetamaId),function(param1:Array):void
             {
                profiles = param1;
                taskDone();

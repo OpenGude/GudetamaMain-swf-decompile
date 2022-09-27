@@ -240,7 +240,7 @@ package gudetama.scene.friend
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(167,profile.encodedUid),function(param1:FriendInfo):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_FRIEND_DETAIL,profile.encodedUid),function(param1:FriendInfo):void
             {
                friendInfo = param1;
                UserDataWrapper.wrapper.updateFriendlyData(friendInfo.friendlyData);

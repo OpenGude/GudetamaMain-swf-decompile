@@ -63,7 +63,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(228,param),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_PRESENT_MONEY_TO_FRIEND,param),function(param1:Array):void
          {
             var response:Array = param1;
             Engine.hideLoading(PresentMoneyAndFriendlyDialog);

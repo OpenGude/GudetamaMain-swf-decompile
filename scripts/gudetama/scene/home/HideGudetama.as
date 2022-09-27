@@ -837,7 +837,7 @@ package gudetama.scene.home
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(16777447),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(HOME_HIDE_GUDE),function(param1:*):void
          {
             var response:* = param1;
             Engine.hideLoading(HideGudetama);

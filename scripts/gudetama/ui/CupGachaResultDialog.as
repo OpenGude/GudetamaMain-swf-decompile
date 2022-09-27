@@ -227,7 +227,7 @@ package gudetama.ui
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(1,gudeId),function(param1:*):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_CUP_GACHA_PLACE,gudeId),function(param1:*):void
             {
                Engine.hideLoading(checkPrizeIsGudetama);
                UserDataWrapper.wrapper.placeGudetama(gudeId);

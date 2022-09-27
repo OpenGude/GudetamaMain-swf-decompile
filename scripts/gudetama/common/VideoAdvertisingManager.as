@@ -459,7 +459,7 @@ package gudetama.common
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(237,_id),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_STARTED_VIDEO,_id),function(param1:*):void
          {
             Engine.hideLoading(sendShowingInfo);
             _callback();

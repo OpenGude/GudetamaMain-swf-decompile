@@ -105,7 +105,7 @@ package gudetama.scene.friend
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(67109025,[!!UserDataWrapper.friendPart.isRequestedUpdateFollower() ? 1 : 0,!!UserDataWrapper.friendPart.isRequestedUpdateFollow() ? 1 : 0]),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(FRIEND_GET_LIST,[!!UserDataWrapper.friendPart.isRequestedUpdateFollower() ? 1 : 0,!!UserDataWrapper.friendPart.isRequestedUpdateFollow() ? 1 : 0]),function(param1:Array):void
             {
                var response:Array = param1;
                recommendedProfiles = response[0];
@@ -243,7 +243,7 @@ package gudetama.scene.friend
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(67109037,blockUids),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(FRIEND_REMOVE_FOLLOWER_AUTO,blockUids),function(param1:*):void
          {
             var _loc2_:int = 0;
             _loc2_ = 0;
@@ -423,7 +423,7 @@ package gudetama.scene.friend
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(162,profile.encodedUid),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_FRIEND_REQUEST_FOLLOW,profile.encodedUid),function(param1:Array):void
          {
             var response:Array = param1;
             Engine.hideLoading(FriendScene_Gudetama);
@@ -520,7 +520,7 @@ package gudetama.scene.friend
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(163,profile.encodedUid),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_FRIEND_REMOVE_FOLLOW,profile.encodedUid),function(param1:Array):void
          {
             Engine.hideLoading(FriendScene_Gudetama);
             var _loc2_:int = profile.followState;
@@ -1185,7 +1185,7 @@ class SearchUI extends FriendListBase
       {
          gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
       }
-      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(67109028,textInput.text#2),function(param1:UserProfileData):void
+      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(FRIEND_SEARCH,textInput.text#2),function(param1:UserProfileData):void
       {
          Engine.hideLoading(FriendScene_Gudetama);
          if(!param1)

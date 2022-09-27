@@ -287,7 +287,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(16777217,selectIdx),function(param1:int):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(HOME_CUP_GACHA_COOK,selectIdx),function(param1:int):void
          {
             var res:int = param1;
             Engine.hideLoading(triggeredCook);
@@ -321,7 +321,7 @@ package gudetama.ui
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(16777218),function(param1:int):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(HOME_CUP_GACHA_SHORT),function(param1:int):void
             {
                Engine.hideLoading(triggeredAd);
                var _loc2_:* = param1;
@@ -371,7 +371,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(16777219,selectIdx),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(HOME_CUP_GACHA_DRAW,selectIdx),function(param1:Array):void
          {
             var res:Array = param1;
             Engine.hideLoading(sendOpen);

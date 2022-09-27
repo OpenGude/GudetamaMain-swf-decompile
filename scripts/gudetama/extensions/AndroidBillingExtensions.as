@@ -59,7 +59,7 @@ package gudetama.extensions
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(114),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(PACKET_GET_ANDROID_PUBLIC_KEY),function(param1:Array):void
          {
             if(param1 != null)
             {
@@ -78,7 +78,7 @@ package gudetama.extensions
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(114),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(PACKET_GET_ANDROID_PUBLIC_KEY),function(param1:Array):void
          {
             if(param1 != null)
             {

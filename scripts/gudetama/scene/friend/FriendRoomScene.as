@@ -185,7 +185,7 @@ package gudetama.scene.friend
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(67109033,profile.encodedUid),function(param1:UserRoomInfo):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(FRIEND_ENTER_ROOM,profile.encodedUid),function(param1:UserRoomInfo):void
             {
                userRoomInfo = param1;
                UserDataWrapper.wrapper.updateFriendlyData(userRoomInfo.friendlyData);
@@ -570,7 +570,7 @@ package gudetama.scene.friend
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(67109034,[profile.encodedUid,kitchenwareData.type,usefulId]),function(param1:*):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(FRIEND_ASSIST,[profile.encodedUid,kitchenwareData.type,usefulId]),function(param1:*):void
                {
                   var response:* = param1;
                   Engine.hideLoading(FriendRoomScene);
@@ -1065,7 +1065,7 @@ class QuestionUI extends UIBase
       {
          gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
       }
-      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(67109035,index),function(param1:Array):void
+      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(FRIEND_ANSWER_QUESTION,index),function(param1:Array):void
       {
          Engine.hideLoading(FriendRoomScene);
          hide();
@@ -1292,7 +1292,7 @@ class ProfileUI extends UIBase
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(163,profile.encodedUid),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_FRIEND_REMOVE_FOLLOW,profile.encodedUid),function(param1:Array):void
             {
                var response:Array = param1;
                Engine.hideLoading(ProfileScene);

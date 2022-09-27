@@ -381,7 +381,7 @@ package gudetama.ui
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(50331859),function(param1:int):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(PACKET_SEND_MONEY_4PICTUREBOOK),function(param1:int):void
                {
                   ResidentMenuUI_Gudetama.addFreeMoney(param1,"start");
                });
@@ -431,7 +431,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(50331664,[item.id#2,item.kind,numPurchase]),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(PURCHASE_ITEM,[item.id#2,item.kind,numPurchase]),function(param1:Array):void
          {
             var response:Array = param1;
             Engine.hideLoading(PurchaseShopDialog);

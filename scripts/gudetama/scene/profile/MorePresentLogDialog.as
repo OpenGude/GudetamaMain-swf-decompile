@@ -191,7 +191,7 @@ package gudetama.scene.profile
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(163,encodedUid),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_FRIEND_REMOVE_FOLLOW,encodedUid),function(param1:Array):void
                {
                   var response:Array = param1;
                   Engine.hideLoading(MorePresentLogDialog);

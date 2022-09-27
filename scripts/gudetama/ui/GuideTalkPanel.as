@@ -672,7 +672,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(210,noticeFlag),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(PACKET_DONE_NOTICE_GUIDE,noticeFlag),function(param1:*):void
          {
             var response:* = param1;
             if(finishCallback)

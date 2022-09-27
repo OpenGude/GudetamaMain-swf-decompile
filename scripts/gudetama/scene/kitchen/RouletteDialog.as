@@ -220,7 +220,7 @@ package gudetama.scene.kitchen
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(134217923,[kitchenwareType,!!UserDataWrapper.friendPart.isRequestedUpdateFollower() ? 1 : 0,!!UserDataWrapper.friendPart.isRequestedUpdateFollow() ? 1 : 0]),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(COOKING_ROULETTE,[kitchenwareType,!!UserDataWrapper.friendPart.isRequestedUpdateFollower() ? 1 : 0,!!UserDataWrapper.friendPart.isRequestedUpdateFollow() ? 1 : 0]),function(param1:Array):void
             {
                roulettes = param1[0];
                rouletteRepairPrice = param1[1][0];
@@ -682,7 +682,7 @@ package gudetama.scene.kitchen
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(134217952),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(COOKING_REPAIR),function(param1:Array):void
                {
                   Engine.hideLoading(RouletteDialog);
                   ResidentMenuUI_Gudetama.consumeMetal(rouletteRepairPrice);
@@ -1006,7 +1006,7 @@ package gudetama.scene.kitchen
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(134217951),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(COOKING_RETRY_FREE),function(param1:Array):void
                {
                   Engine.hideLoading(RouletteDialog);
                   rouletteRotateRatio = param1[0];
@@ -1035,7 +1035,7 @@ package gudetama.scene.kitchen
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(134217943),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(COOKING_RETRY),function(param1:Array):void
                {
                   Engine.hideLoading(RouletteDialog);
                   rouletteRotateRatio = param1[0];
@@ -1121,7 +1121,7 @@ package gudetama.scene.kitchen
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(134217942),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(COOKING_FINISH),function(param1:Array):void
          {
             Engine.hideLoading(RouletteDialog);
             var _loc5_:KitchenwareData = param1[0];
@@ -1254,7 +1254,7 @@ package gudetama.scene.kitchen
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(134217963),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(COOKING_ROULETTE_START),function(param1:Array):void
          {
             var response:Array = param1;
             Engine.hideLoading(RouletteDialog);
@@ -1359,7 +1359,7 @@ package gudetama.scene.kitchen
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(134217912,percent),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(COOKING_COMPLETE,percent),function(param1:Array):void
          {
             result = param1[0];
             retryPrice = param1[1];
@@ -1387,7 +1387,7 @@ package gudetama.scene.kitchen
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(134217924,selectedUsefulIds),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(COOKING_USEFUL,selectedUsefulIds),function(param1:Array):void
          {
             var _loc9_:* = null;
             var _loc6_:int = 0;

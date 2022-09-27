@@ -796,7 +796,7 @@ package gudetama.common
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndArrayObject(208,_snstype,_id),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndArrayObject(GENERAL_LINK_SNS,_snstype,_id),function(param1:Array):void
             {
                if(_snstype == 0)
                {

@@ -168,7 +168,7 @@ package gudetama.scene.decoration
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(16777460,id),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(HOME_DECORATION_CHANGE,id),function(param1:*):void
          {
             var response:* = param1;
             if(response is Array)

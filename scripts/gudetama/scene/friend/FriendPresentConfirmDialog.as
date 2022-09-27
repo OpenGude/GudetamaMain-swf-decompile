@@ -141,7 +141,7 @@ package gudetama.scene.friend
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(242,friendEncodeUid),function(param1:*):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_CHECK_GUDE_PRESENT,friendEncodeUid),function(param1:*):void
             {
                restGp = param1[0];
                restVideo = param1[1];

@@ -181,7 +181,7 @@ package gudetama.scene.home
       {
          var event:Event = param1;
          exchangeBtn.removeEventListener("triggered",triggeredExchange);
-         var packet:Packet = PacketUtil.createWithInt(16777463,[expansionDef.id#2]);
+         var packet:Packet = PacketUtil.createWithInt(HOME_DECORATION_EXTENSION_PLACE,[expansionDef.id#2]);
          var _loc3_:* = HttpConnector;
          if(gudetama.net.HttpConnector.mainConnector == null)
          {

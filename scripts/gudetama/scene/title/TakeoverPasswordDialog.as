@@ -161,7 +161,7 @@ package gudetama.scene.title
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(28,input1.text#2),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(GENERAL_REQUEST_TAKEOVER_CODE,input1.text#2),function(param1:*):void
          {
             code = param1;
             backButtonCallback();

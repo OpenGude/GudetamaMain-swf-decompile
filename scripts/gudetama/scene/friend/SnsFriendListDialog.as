@@ -343,7 +343,7 @@ package gudetama.scene.friend
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndObject(209,_type,searchIdsString),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndObject(GENERAL_SEARCH_SNS_PROFILE,_type,searchIdsString),function(param1:Array):void
             {
                var _loc5_:* = null;
                var _loc2_:* = null;

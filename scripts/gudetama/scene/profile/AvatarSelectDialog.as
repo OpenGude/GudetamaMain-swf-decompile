@@ -302,7 +302,7 @@ package gudetama.scene.profile
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndObject(201326791,new Array(selectAvatarId,snsType),DataStorage.getLocalData().getSnsImageByteArray(snsType)),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndObject(PROFILE_SET_AVATAR,new Array(selectAvatarId,snsType),DataStorage.getLocalData().getSnsImageByteArray(snsType)),function(param1:Array):void
             {
                UserDataWrapper.wrapper.setAvatar(selectAvatarId,snsType);
                procCallback();

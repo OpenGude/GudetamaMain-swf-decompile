@@ -140,7 +140,7 @@ package gudetama.ui
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(238),function(param1:String):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_GET_VIDEO_RATE),function(param1:String):void
             {
                DataStorage.getLocalData().setVideoAdsRate(param1);
                addChild(displaySprite);

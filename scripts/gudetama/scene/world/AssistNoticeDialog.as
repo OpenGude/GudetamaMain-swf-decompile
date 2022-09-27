@@ -91,7 +91,7 @@ package gudetama.scene.world
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(16777446),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(HOME_ASSIST_FROM_FRIEND),function(param1:Array):void
             {
                assists = !!param1[0] ? param1[0] : [];
                presents = !!param1[1] ? param1[1] : [];
@@ -270,7 +270,7 @@ package gudetama.scene.world
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(163,encodedUid),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_FRIEND_REMOVE_FOLLOW,encodedUid),function(param1:Array):void
                {
                   Engine.hideLoading(AssistNoticeDialog);
                   profile.followState = 0;

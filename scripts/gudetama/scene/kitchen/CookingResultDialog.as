@@ -368,7 +368,7 @@ package gudetama.scene.kitchen
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(134217954),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(COOKING_PLACE),function(param1:Array):void
                {
                   Engine.hideLoading(CookingResultDialog);
                   UserDataWrapper.wrapper.placeGudetama(gudetamaId);
@@ -440,7 +440,7 @@ package gudetama.scene.kitchen
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(204,tutorialProgress),function(param1:GuideTalkDef):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(PACKET_CHECK_TUTORIAL_GUIDE,tutorialProgress),function(param1:GuideTalkDef):void
          {
             var response:GuideTalkDef = param1;
             ResidentMenuUI_Gudetama.getInstance().sendChangeState(60,function():void

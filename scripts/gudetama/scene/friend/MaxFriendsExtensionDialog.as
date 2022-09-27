@@ -183,7 +183,7 @@ package gudetama.scene.friend
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(67109036),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(FRIEND_EXTENSION),function(param1:Array):void
             {
                Engine.hideLoading(MaxFriendsExtensionDialog);
                UserDataWrapper.friendPart.increaseNumFriendsExtension();

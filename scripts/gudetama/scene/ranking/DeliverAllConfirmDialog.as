@@ -238,7 +238,7 @@ package gudetama.scene.ranking
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(33554434,rankingId),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(RANKING_DELIVER_ALL,rankingId),function(param1:*):void
          {
             var res:* = param1;
             Engine.hideLoading(triggeredDeliver);

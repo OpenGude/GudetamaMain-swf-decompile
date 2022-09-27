@@ -1072,7 +1072,7 @@ package gudetama.engine
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(59),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_PING),function(param1:*):void
          {
             callback(getTimer() - sendTime);
          });
@@ -1324,7 +1324,7 @@ package gudetama.engine
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndArrayObject(23,!!_isConsume ? 0 : 1,receipt),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndArrayObject(GENERAL_PURCHASE,!!_isConsume ? 0 : 1,receipt),function(param1:Array):void
          {
             var response:Array = param1;
             hideLoading(sendReceiptDirect);
@@ -1455,7 +1455,7 @@ package gudetama.engine
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(25,token),function(param1:*):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(GENERAL_PUSH_TOKEN,token),function(param1:*):void
             {
                if(param1 is Array)
                {
@@ -1488,7 +1488,7 @@ package gudetama.engine
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(119,id),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(GENERAL_APPSFLYER_UID,id),function(param1:*):void
          {
             if(param1 is Array)
             {
@@ -2614,7 +2614,7 @@ package gudetama.engine
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(59),function(param1:Object):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_PING),function(param1:Object):void
          {
             var response:Object = param1;
             hideLoading("ping_lock");
@@ -2629,7 +2629,7 @@ package gudetama.engine
                   {
                      gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                   }
-                  gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(229,_num),function(param1:Array):void
+                  gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_GET_OFFERWALL_REWARD,_num),function(param1:Array):void
                   {
                      hideLoading(checkConnectedSession);
                      var _loc2_:int = param1[0];

@@ -92,7 +92,7 @@ package gudetama.scene.kitchen
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(166,[index,gudetamaDef.id#2]),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_UPDATE_WANTED,[index,gudetamaDef.id#2]),function(param1:Array):void
             {
                var response:Array = param1;
                Engine.hideLoading(addWantedGudetama);

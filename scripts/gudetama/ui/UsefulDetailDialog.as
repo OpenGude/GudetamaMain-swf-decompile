@@ -267,7 +267,7 @@ package gudetama.ui
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(189,id),function(param1:*):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_USE_USEFUL,id),function(param1:*):void
             {
                var _loc2_:int = 0;
                Engine.hideLoading(UsefulDetailDialog);

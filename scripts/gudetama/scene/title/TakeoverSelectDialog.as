@@ -113,7 +113,7 @@ package gudetama.scene.title
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(124),function(param1:String):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_CHECK_TAKEOVER_CODE),function(param1:String):void
          {
             var res:String = param1;
             if(res != null)

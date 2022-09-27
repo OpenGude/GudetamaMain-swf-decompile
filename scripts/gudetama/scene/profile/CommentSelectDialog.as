@@ -233,7 +233,7 @@ package gudetama.scene.profile
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(201326793,selectCommentId),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(PROFILE_SET_COMMENT,selectCommentId),function(param1:Array):void
          {
             setComment();
          });

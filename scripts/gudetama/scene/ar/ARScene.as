@@ -291,7 +291,7 @@ package gudetama.scene.ar
          });
          queue.addTask(function():void
          {
-            var packet:Packet = PacketUtil.create(218);
+            var packet:Packet = PacketUtil.create(PACKET_GET_SHARE_BONUS_PARAM);
             var _loc2_:* = HttpConnector;
             if(gudetama.net.HttpConnector.mainConnector == null)
             {
@@ -1104,7 +1104,7 @@ package gudetama.scene.ar
                      {
                         gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                      }
-                     gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(203,progress),function(param1:Object):void
+                     gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(PACKET_CHECK_AND_START_TUTORIAL_GUIDE,progress),function(param1:Object):void
                      {
                         var response:Object = param1;
                         GuideTalkPanel.showTutorial(GameSetting.def.guideTalkTable[progress],noticeTutorialAction,null,function():void

@@ -1001,7 +1001,7 @@ package gudetama.net
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndArrayObject(11,TimeZoneUtil.epochMillisToOffsetSecs(),Engine.getLocale()),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithIntAndArrayObject(GENERAL_RELOGIN,TimeZoneUtil.epochMillisToOffsetSecs(),Engine.getLocale()),function(param1:Array):void
          {
             UserDataWrapper.init(param1[0] as UserData);
             var _loc4_:Array = param1[2];

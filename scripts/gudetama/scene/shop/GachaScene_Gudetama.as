@@ -164,7 +164,7 @@ package gudetama.scene.shop
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(167772315),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GACHA_GET_AVAILABLE_DATA_LIST),function(param1:Array):void
             {
                gachaDataList = param1[0];
                gachaDataList.sort(gachaDataComparator);
@@ -312,7 +312,7 @@ package gudetama.scene.shop
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(167772373),function(param1:*):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GACHA_PLAY_ENTRY),function(param1:*):void
                {
                   var response:* = param1;
                   Engine.hideLoading(GachaScene_Gudetama);
@@ -479,7 +479,7 @@ package gudetama.scene.shop
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(167772316,[id,index,!!playAll ? 1 : 0]),function(param1:*):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GACHA_PLAY,[id,index,!!playAll ? 1 : 0]),function(param1:*):void
             {
                var response:* = param1;
                Engine.hideLoading(GachaScene_Gudetama);
@@ -590,7 +590,7 @@ package gudetama.scene.shop
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(167772317,id),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GACHA_PLAY_FREE,id),function(param1:*):void
          {
             var response:* = param1;
             Engine.hideLoading(GachaScene_Gudetama);
@@ -653,7 +653,7 @@ package gudetama.scene.shop
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(167772316,[id,index,!!playAll ? 1 : 0]),function(param1:*):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GACHA_PLAY,[id,index,!!playAll ? 1 : 0]),function(param1:*):void
                {
                   var response:* = param1;
                   Engine.hideLoading(GachaScene_Gudetama);
@@ -727,7 +727,7 @@ package gudetama.scene.shop
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(167772409,stamps),function(param1:*):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GACHA_PLAY_STAMP,stamps),function(param1:*):void
                {
                   var response:* = param1;
                   Engine.hideLoading(GachaScene_Gudetama);
@@ -807,7 +807,7 @@ package gudetama.scene.shop
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(167772318),function(param1:GachaResult):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GACHA_PLAY_ONCE_MORE),function(param1:GachaResult):void
                {
                   var response:GachaResult = param1;
                   Engine.hideLoading(GachaScene_Gudetama);

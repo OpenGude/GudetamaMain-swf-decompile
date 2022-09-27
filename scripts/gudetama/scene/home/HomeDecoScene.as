@@ -735,7 +735,7 @@ package gudetama.scene.home
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(16777462,jsonStrData),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(HOME_DECORATION_STAMP,jsonStrData),function(param1:*):void
          {
             processClose(true);
          });

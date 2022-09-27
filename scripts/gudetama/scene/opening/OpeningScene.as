@@ -202,7 +202,7 @@ class agreeTosPhase extends BaseScene
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(100663307),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(PACKET_CHECKED_TERMS_OF_SERVICE),function(param1:Array):void
          {
             callback();
          });
@@ -497,7 +497,7 @@ class InputGenderAndPlayerNamePhase extends BaseScene
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(100663309,info),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithObject(PACKET_SET_FIRSTLOGIN_INFO,info),function(param1:Array):void
             {
                var result:Array = param1;
                if(result)

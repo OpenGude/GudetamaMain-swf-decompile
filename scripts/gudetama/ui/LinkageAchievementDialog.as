@@ -109,7 +109,7 @@ package gudetama.ui
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(16777408,id),function(param1:*):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(HOME_LINKAGE_NOTIFY,id),function(param1:*):void
             {
                UserDataWrapper.linkagePart.notify(id);
                queue.taskDone();

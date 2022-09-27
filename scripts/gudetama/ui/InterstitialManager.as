@@ -82,7 +82,7 @@ package gudetama.ui
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(243,currentInterSetting.id#2),function(param1:*):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_TOUCH_IINTERSTITIAL,currentInterSetting.id#2),function(param1:*):void
                {
                });
                _close();

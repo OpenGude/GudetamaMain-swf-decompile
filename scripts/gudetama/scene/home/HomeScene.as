@@ -579,7 +579,7 @@ package gudetama.scene.home
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(16777403),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(HOME_GET_INFO),function(param1:Array):void
             {
                var _loc2_:TouchInfo = param1[0];
                questionData = param1[1];
@@ -1225,7 +1225,7 @@ package gudetama.scene.home
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(16777461,2),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERATE_HIDE_GUDE_4GUIDE,2),function(param1:*):void
          {
             UserDataWrapper.wrapper.hideGudeId = 2;
             if(hideGude != null)
@@ -1473,7 +1473,7 @@ package gudetama.scene.home
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(16777421),function(param1:TouchInfo):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(PACKET_GET_GUDETAMA_VOICE_EVENT_TUTORIAL),function(param1:TouchInfo):void
                {
                   Engine.hideLoading(HomeScene);
                   if(param1)
@@ -1491,7 +1491,7 @@ package gudetama.scene.home
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(16777422),function(param1:TouchInfo):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(PACKET_GET_HEAVEN_EVENT_TUTORIAL),function(param1:TouchInfo):void
                {
                   Engine.hideLoading(HomeScene);
                   if(param1)
@@ -1567,7 +1567,7 @@ package gudetama.scene.home
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(16777220),function(param1:*):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(HOME_CUP_GACHA_GUIDE),function(param1:*):void
                {
                   Engine.hideLoading(noticeTutorialAction);
                   if(!(param1 is Array))
@@ -1674,7 +1674,7 @@ package gudetama.scene.home
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(16777423),function(param1:*):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(PACKET_FINISHED_TUTORIAL_GUIDE),function(param1:*):void
          {
             Engine.hideLoading(HomeScene);
             Engine.switchScene(new HomeScene());
@@ -1793,7 +1793,7 @@ package gudetama.scene.home
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(190),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_EXTRA),function(param1:Array):void
             {
                Engine.hideLoading(HomeScene);
             });
@@ -2093,7 +2093,7 @@ package gudetama.scene.home
             {
                gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
             }
-            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(190),function(param1:Array):void
+            gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_EXTRA),function(param1:Array):void
             {
                Engine.hideLoading(HomeScene);
             });
@@ -2290,7 +2290,7 @@ package gudetama.scene.home
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(16777410,-1),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(HOME_UNLOCK_VOICE,-1),function(param1:Array):void
                {
                   var response:Array = param1;
                   Engine.hideLoading(HomeScene);
@@ -2323,7 +2323,7 @@ package gudetama.scene.home
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(16777410,-2),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(HOME_UNLOCK_VOICE,-2),function(param1:Array):void
                {
                   var response:Array = param1;
                   Engine.hideLoading(HomeScene);
@@ -3881,7 +3881,7 @@ class MovieButton extends UIBase
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(190),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_EXTRA),function(param1:Array):void
          {
             Engine.hideLoading(HomeScene);
             showVideoAdConfirmOrWaitingDialog();
@@ -3923,7 +3923,7 @@ class MovieButton extends UIBase
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(190),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(GENERAL_EXTRA),function(param1:Array):void
          {
             Engine.hideLoading(HomeScene);
             VideoAdConfirmDialog.show("start1",GameSetting.getUIText("videoAdConfirm.title"),message,GameSetting.getUIText("videoAdConfirm.carnavi.caution"),videoAdRewardCallback,UserDataWrapper.videoAdPart.getRestNum());
@@ -3948,7 +3948,7 @@ class MovieButton extends UIBase
       {
          gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
       }
-      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(16777428),function(param1:Array):void
+      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(HOME_VIDEO_AD_REWARD),function(param1:Array):void
       {
          var response:Array = param1;
          try
@@ -4286,7 +4286,7 @@ class DelusionButton extends UIBase
       {
          gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
       }
-      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(16777402),function(param1:Array):void
+      gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.create(HOME_DELUSION),function(param1:Array):void
       {
          var response:Array = param1;
          Engine.hideLoading(HomeScene);
@@ -5174,7 +5174,7 @@ class MessageUI extends UIBase
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(163,profile.encodedUid),function(param1:Array):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_FRIEND_REMOVE_FOLLOW,profile.encodedUid),function(param1:Array):void
                {
                   Engine.hideLoading(HomeScene);
                   profile.followState = 0;
@@ -5433,7 +5433,7 @@ class PushInfoDialog extends BaseScene
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(38,pushFlags),function(param1:int):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_PUSH_PERMIT,pushFlags),function(param1:int):void
          {
             var _loc2_:* = UserDataWrapper;
             gudetama.data.UserDataWrapper.wrapper._data.pushFlags = param1;

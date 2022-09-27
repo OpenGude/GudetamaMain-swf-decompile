@@ -192,7 +192,7 @@ package gudetama.scene.friend
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(162,prof.encodedUid),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_FRIEND_REQUEST_FOLLOW,prof.encodedUid),function(param1:Array):void
          {
             var response:Array = param1;
             Engine.hideLoading(SnsFriendDetailDialog);

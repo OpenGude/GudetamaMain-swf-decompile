@@ -103,7 +103,7 @@ package gudetama.ui
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(166,[index,gudetamaId]),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_UPDATE_WANTED,[index,gudetamaId]),function(param1:Array):void
          {
             var response:Array = param1;
             UserDataWrapper.wantedPart.setWantedGudetamas(response);

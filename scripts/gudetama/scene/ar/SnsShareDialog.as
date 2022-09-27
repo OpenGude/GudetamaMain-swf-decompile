@@ -208,7 +208,7 @@ package gudetama.scene.ar
          var withSave:Boolean = param3;
          var closeCallback:Function = param4;
          var optionMsg:String = param5;
-         var packet:Packet = PacketUtil.create(218);
+         var packet:Packet = PacketUtil.create(PACKET_GET_SHARE_BONUS_PARAM);
          var _loc7_:* = HttpConnector;
          if(gudetama.net.HttpConnector.mainConnector == null)
          {

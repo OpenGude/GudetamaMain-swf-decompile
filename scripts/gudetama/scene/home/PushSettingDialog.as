@@ -164,7 +164,7 @@ package gudetama.scene.home
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(38,currentBit),function(param1:int):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_PUSH_PERMIT,currentBit),function(param1:int):void
                {
                   var _loc2_:* = UserDataWrapper;
                   gudetama.data.UserDataWrapper.wrapper._data.pushFlags = param1;

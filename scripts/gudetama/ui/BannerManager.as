@@ -89,7 +89,7 @@ package gudetama.ui
                {
                   gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                }
-               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(239,currentBannerSetting.id#2),function(param1:*):void
+               gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(GENERAL_TOUCH_BANNER,currentBannerSetting.id#2),function(param1:*):void
                {
                });
             }

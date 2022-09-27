@@ -186,13 +186,13 @@ package gudetama.scene.ar
          renderImage.scaleY = CAPTURED_IMAGE_HEIGHT / capturedTexture.height;
          scrollRenderSprite.readjustLayout();
          Engine.lockTouchInput(SnsShareDialog);
-         var packet:Packet = PacketUtil.create(218);
+         var packet:Packet = PacketUtil.create(PACKET_GET_SHARE_BONUS_PARAM);
          var _loc5_:* = HttpConnector;
          if(gudetama.net.HttpConnector.mainConnector == null)
          {
             gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
          }
-         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(268435683,[!!DataStorage.getLocalData().isARMode() ? 1 : 0]),function(param1:Array):void
+         gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(AR_CAPTURE,[!!DataStorage.getLocalData().isARMode() ? 1 : 0]),function(param1:Array):void
          {
          });
          var _loc6_:* = HttpConnector;
@@ -521,7 +521,7 @@ package gudetama.scene.ar
                      {
                         gudetama.net.HttpConnector.mainConnector = new gudetama.net.HttpConnector();
                      }
-                     gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(203,progress),function(param1:Object):void
+                     gudetama.net.HttpConnector.mainConnector.sendRequest(PacketUtil.createWithInt(PACKET_CHECK_AND_START_TUTORIAL_GUIDE,progress),function(param1:Object):void
                      {
                         var response:Object = param1;
                         GuideTalkPanel.showTutorial(GameSetting.def.guideTalkTable[progress],noticeTutorialAction,getGuideArrowPos,function():void
